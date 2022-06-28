@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class UserTableSeeder extends Seeder
 {
@@ -21,9 +22,11 @@ class UserTableSeeder extends Seeder
                 'email' => 'test1@test',
                 'password' => bcrypt('test'),
             ],
+            [
                 'name' => 'test2',
                 'email' => 'test2@test',
                 'password' => bcrypt('test'),
+            ],
         ]);
     }
 }
